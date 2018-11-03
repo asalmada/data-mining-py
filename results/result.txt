@@ -1,0 +1,88 @@
+(base) D:\Projetos\data-mining-py>python data-mining.py
+[nltk_data] Downloading package punkt to
+[nltk_data]     C:\Users\andre\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\andre\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+             precision    recall  f1-score   support
+
+        CBR       0.96      0.96      0.96        28
+        ILP       0.92      0.92      0.92        12
+         RI       1.00      1.00      1.00        18
+
+avg / total       0.97      0.97      0.97        58
+
+             precision    recall  f1-score   support
+
+        CBR       0.90      0.96      0.93        28
+        ILP       0.90      0.75      0.82        12
+         RI       1.00      1.00      1.00        18
+
+avg / total       0.93      0.93      0.93        58
+
+             precision    recall  f1-score   support
+
+        CBR       1.00      1.00      1.00        28
+        ILP       1.00      1.00      1.00        12
+         RI       1.00      1.00      1.00        18
+
+avg / total       1.00      1.00      1.00        58
+
+             precision    recall  f1-score   support
+
+        CBR       1.00      1.00      1.00        28
+        ILP       1.00      1.00      1.00        12
+         RI       1.00      1.00      1.00        18
+
+avg / total       1.00      1.00      1.00        58
+
+             precision    recall  f1-score   support
+
+        CBR       1.00      1.00      1.00        28
+        ILP       1.00      0.92      0.96        12
+         RI       0.95      1.00      0.97        18
+
+avg / total       0.98      0.98      0.98        58
+
+             precision    recall  f1-score   support
+
+        CBR       0.90      1.00      0.95        28
+        ILP       1.00      0.83      0.91        12
+         RI       1.00      0.94      0.97        18
+
+avg / total       0.95      0.95      0.95        58
+
+             precision    recall  f1-score   support
+
+        CBR       0.93      0.96      0.95        27
+        ILP       1.00      0.92      0.96        12
+         RI       0.94      0.94      0.94        18
+
+avg / total       0.95      0.95      0.95        57
+
+             precision    recall  f1-score   support
+
+        CBR       1.00      0.96      0.98        27
+        ILP       0.92      0.92      0.92        12
+         RI       0.95      1.00      0.97        18
+
+avg / total       0.97      0.96      0.96        57
+
+             precision    recall  f1-score   support
+
+        CBR       1.00      1.00      1.00        27
+        ILP       1.00      1.00      1.00        12
+         RI       1.00      1.00      1.00        18
+
+avg / total       1.00      1.00      1.00        57
+
+             precision    recall  f1-score   support
+
+        CBR       0.93      1.00      0.96        27
+        ILP       1.00      0.91      0.95        11
+         RI       1.00      0.94      0.97        17
+
+avg / total       0.97      0.96      0.96        55
+
+0.9703503272287302

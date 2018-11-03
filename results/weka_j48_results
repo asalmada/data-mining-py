@@ -1,0 +1,80 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     data-weka.filters.unsupervised.attribute.NominalToString-Clast-weka.filters.unsupervised.attribute.NominalToString-Clast-weka.filters.unsupervised.attribute.StringToWordVector-R2-W1000-prune-rate-1.0-T-I-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!"
+Instances:    574
+Attributes:   1004
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+muggleton <= 0
+|   reason <= 0
+|   |   dzeroski <= 0
+|   |   |   valid <= 0
+|   |   |   |   distanc <= 0
+|   |   |   |   |   inform <= 0
+|   |   |   |   |   |   case <= 0
+|   |   |   |   |   |   |   ilp <= 0: RI (14.0)
+|   |   |   |   |   |   |   ilp > 0: ILP (2.0)
+|   |   |   |   |   |   case > 0: CBR (2.0)
+|   |   |   |   |   inform > 0: RI (146.0/1.0)
+|   |   |   |   distanc > 0
+|   |   |   |   |   academ <= 0: CBR (2.0)
+|   |   |   |   |   academ > 0: RI (4.0)
+|   |   |   valid > 0
+|   |   |   |   acm <= 0: CBR (3.0)
+|   |   |   |   acm > 0: RI (4.0)
+|   |   dzeroski > 0: ILP (11.0)
+|   reason > 0
+|   |   case <= 0
+|   |   |   properti <= 0: RI (10.0/1.0)
+|   |   |   properti > 0: ILP (2.0)
+|   |   case > 0
+|   |   |   bruce <= 0
+|   |   |   |   identif <= 0: CBR (249.0)
+|   |   |   |   identif > 0
+|   |   |   |   |   claus <= 0: CBR (10.0)
+|   |   |   |   |   claus > 0: ILP (2.0)
+|   |   |   bruce > 0
+|   |   |   |   achiev <= 0: CBR (7.0)
+|   |   |   |   achiev > 0: RI (3.0)
+muggleton > 0: ILP (103.0/1.0)
+
+Number of Leaves  : 	17
+
+Size of the tree : 	33
+
+
+Time taken to build model: 1.56 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         544               94.7735 %
+Incorrectly Classified Instances        30                5.2265 %
+Kappa statistic                          0.917 
+Mean absolute error                      0.0395
+Root mean squared error                  0.185 
+Relative absolute error                  9.4317 %
+Root relative squared error             40.4149 %
+Total Number of Instances              574     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,960    0,030    0,967      0,960    0,964      0,930    0,959     0,949     CBR
+                 0,950    0,018    0,934      0,950    0,942      0,926    0,971     0,883     ILP
+                 0,927    0,033    0,927      0,927    0,927      0,894    0,945     0,878     RI
+Weighted Avg.    0,948    0,028    0,948      0,948    0,948      0,918    0,957     0,913     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 265   2   9 |   a = CBR
+   2 113   4 |   b = ILP
+   7   6 166 |   c = RI

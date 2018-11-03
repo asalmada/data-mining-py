@@ -1,0 +1,43 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     data-weka.filters.unsupervised.attribute.NominalToString-Clast-weka.filters.unsupervised.attribute.NominalToString-Clast-weka.filters.unsupervised.attribute.StringToWordVector-R2-W1000-prune-rate-1.0-T-I-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r\n\t.,;:\'\"()?!"
+Instances:    574
+Attributes:   1004
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         532               92.6829 %
+Incorrectly Classified Instances        42                7.3171 %
+Kappa statistic                          0.8857
+Mean absolute error                      0.058 
+Root mean squared error                  0.2266
+Relative absolute error                 13.8372 %
+Root relative squared error             49.5109 %
+Total Number of Instances              574     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,859    0,000    1,000      0,859    0,924      0,871    0,924     0,937     CBR
+                 0,975    0,009    0,967      0,975    0,971      0,963    0,988     0,961     ILP
+                 1,000    0,096    0,825      1,000    0,904      0,863    0,949     0,815     RI
+Weighted Avg.    0,927    0,032    0,938      0,927    0,927      0,888    0,945     0,904     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 237   4  35 |   a = CBR
+   0 116   3 |   b = ILP
+   0   0 179 |   c = RI
